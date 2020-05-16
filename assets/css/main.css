@@ -1,0 +1,207 @@
+*, ::before, ::after {
+    position: relative;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colours */
+    --color-whiteGray: #a6a6a6;
+    --color-dark: #2a2a2a;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1;
+    color: var(--color-dark);
+}
+
+/*
+
+body::-webkit-scrollbar {
+    width: 0.35em;
+}
+
+body::-webkit-scrollbar-track {
+    background: #26282d;
+    border-radius: 10em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #696c72;
+    border: 0.1em solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+*/
+
+header {}
+
+button, input {
+    font: inherit;
+    color: inherit;
+    line-height: 1;
+    background: unset;
+    border: unset;
+    outline: unset;
+    appearance: unset;
+}
+
+input::placeholder {
+    color: var(--color-whiteGray);
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+strong {
+    font-size: 1.1em;
+}
+
+a {
+    color: var(--color-whiteGray);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--color-dark);
+}
+
+a.ghost {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 12;
+}
+
+.hidden {
+    display: none !important;
+}
+
+[hidden] {
+    visibility: hidden;
+}
+
+.marked {
+    color: #ffc500;
+}
+
+/* Icons */
+
+[class *="icon"] {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    background: no-repeat center/contain;
+}
+
+.icon__person {
+    background-image: url(/assets/img/person.png);
+}
+
+.icon__bag {
+    background-image: url(/assets/img/bag.png);
+}
+
+.icon__search {
+    background-image: url(/assets/img/search.png);
+}
+
+.icon__chevron-left {
+    background-image: url(/assets/img/chevron-left.png);
+}
+
+.icon__vk {
+    background-image: url(/assets/img/icons/vk.png);
+}
+
+/* Topbar */
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
+}
+
+.topbar__help {}
+
+/* Logo */
+
+.topbar__logo {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* Account */
+
+.topbar__account {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-account__section {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-account__section:first-child {
+    margin-right: 2em;
+}
+
+.topbar-account__section--text {
+    margin-left: 1em;
+    color: var(--color-whiteGray);
+}
+
+/* Megabar */
+
+.megabar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+/* Search */
+
+.megabar-search {
+    display: flex;
+    align-items: center;
+}
+
+.megabar-search__icon {
+    margin-right: 0.75em;
+    font-size: 1.75em;
+}
+
+.megabar-search__input {
+    font-size: 1.25em;
+    color: var(--color-whiteGray);
+}
+
+/* Menu */
+
+.megabar-menu {
+    display: flex;
+    margin: 0 auto;
+}
+
+.megabar-menu__link {
+    margin-left: 1em;
+    transition: 0.125s linear opacity;
+}
+
+.megabar-menu__link:first-child {
+    margin-left: unset;
+}
+
+.megabar-menu__link:hover {
+    opacity: 0.75;
+}
