@@ -11,7 +11,9 @@
 <body>
     <header>
         <div class="topbar">
-            <a href="#help" class="topbar__help">Нужна помощь?</a>
+            <div>
+                <a href="#help">Нужна помощь?</a>
+            </div>
             <div class="topbar__logo">снейстор</div>
             <div class="topbar__account">
                 <div class="topbar-account__section">
@@ -50,10 +52,6 @@
             Главная > Футболки > Одежда бомжа
         </div>
         <div class="page-part">
-            <div class="page-article">
-                <h2 class="page-article__title">Футболки</h2>
-                <h4 class="page-article__description">Футболки "Сней" выполнены из высококачественных материалов с использованием крутой печати</h4>
-            </div>
             <div class="page-container">
                 <div class="product-page">
                     <div class="product-images">
@@ -78,11 +76,24 @@
                             <span class="icon__truck"></span>
                             Доставим <b>беслатно</b> в любую точку мира
                         </div>
-                        <span class="emphasize">Таблица соответствий размеров</span>
+                        <div class="selector product-details__selector">
+                            <div class="selector__current" option="Выберите свой размер"></div>
+                            <div class="selector__group">
+                                <div class="selector__option">Анал бомжа</div>
+                                <div class="selector__option"></div>
+                                <div class="selector__option">123X</div>
+                            </div>
+                        </div>
+                        <a class="emphasize">Таблица соответствий размеров</a>
                         <div class="product-details__text">
                             Не менее 50% органического хлопка. Органический хлопок выращивается с применением
                             методов, способствующих защите биологического разнообразия, таких как ротация
                             культур и использование натуральных удобрений.
+                        </div>
+                        <button class="product-details__add">Добавить в корзину</button>
+                        <div class="product-details__info">
+                            <span class="icon__alert"></span>
+                            <span>Нихуя себе человек купили на этой неделе</span>
                         </div>
                         <hr>
                         <div class="product-details__menu">

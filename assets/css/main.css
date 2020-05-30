@@ -17,7 +17,8 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1600px;
     font-size: inherit;
     font-family: "Roboto", sans-serif;
     line-height: 1;
@@ -55,6 +56,7 @@ main, footer {
 button, input {
     font: inherit;
     color: inherit;
+    cursor: pointer;
     line-height: 1;
     background: unset;
     border: unset;
@@ -76,6 +78,7 @@ strong {
 
 a {
     color: var(--color-whiteGray);
+    cursor: pointer;
 }
 
 a:hover {
@@ -126,6 +129,7 @@ hr {
     width: 1.5em;
     height: 1.5em;
     background: no-repeat center/contain;
+    vertical-align: middle;
 }
 
 .icon__person {
@@ -144,8 +148,19 @@ hr {
     background-image: url(/assets/img/chevron-left.png);
 }
 
+.icon__chevron-down {
+    width: 0.75em;
+    height: 0.75em;
+    background-image: url("/assets/img/chevron-left.png");
+    transform: rotate(-90deg);
+}
+
 .icon__loupe {
     background-image: url(/assets/img/search.png);
+}
+
+.icon__alert {
+    background-image: url(/assets/img/alert.png);
 }
 
 .icon__truck {
@@ -171,6 +186,47 @@ hr {
 .icon__instagram {
     background-image: url(/assets/img/socials.png);
     background-position: -3.5em 0;
+}
+
+/* Tools */
+
+.emphasize {
+    color: var(--color-dark);
+    text-decoration: underline;
+}
+
+.emphasize:hover {
+    text-decoration: none;
+}
+
+.selector {
+    display: inline-block;
+}
+
+.selector__current {
+    display: flex;
+    align-items: center;
+    padding: 1.75rem;
+    border: 1px solid var(--color-whiterGray);
+    cursor: pointer;
+}
+
+.selector__current::before {
+    content: attr(option);
+    margin-right: 2em;
+}
+
+.selector__current::after {
+    content: "";
+    background: url("/assets/img/chevron-left.png") no-repeat center/contain;
+    width: 0.75em;
+    height: 0.75em;
+    margin-left: auto;
+    transform: rotate(-90deg);
+}
+
+.selector__group {
+    display: none;
 }
 
 /* Topbar */
@@ -361,8 +417,8 @@ hr {
 }
 
 .product-images__main {
-    width: 53em;
-    height: 50em;
+    width: 45vw;
+    height: 43vw;
     background: rebeccapurple;
     border-radius: 0.25em;
 }
@@ -408,8 +464,8 @@ hr {
     padding: 0.5rem 0.625rem;
     margin-left: 1em;
     background: var(--color-orange);
-    border-radius: 0.25em;
-    font-size: 1.1255em;
+    border-radius: 0.2em;
+    font-size: 1.125em;
     font-weight: 300;
     color: white;
 }
@@ -421,18 +477,117 @@ hr {
     line-height: 1.25;
 }
 
+.product-details__selector {
+    display: block;
+    margin-bottom: 1em;
+}
+
 .product-details__menu {
     display: grid;
     row-gap: 1em;
 }
 
-.emphasize {
-    color: var(--color-dark);
-    text-decoration: underline;
+.product-details__add {
+    padding: 1.75em;
+    width: 100%;
+    background: var(--color-dark);
+    font-size: 1.125em;
+    font-weight: 500;
+    color: white;
 }
 
-.emphasize:hover {
-    text-decoration: none;
+.product-details__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25em;
+    margin-top: 0.5em;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.product-details__info>span:first-child {
+    margin-right: 0.5em
+}
+
+/* Cart */
+
+.cart-orders {
+    position: fixed;
+    right: 0;
+    width: 35em;
+    height: 100vh;
+    overflow: auto;
+    background: white;
+    box-shadow: -2em 5em 2em -2.5em rgba(0, 0, 0, 0.25);
+}
+
+.cart-orders__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+.icon__cross {
+    background-image: url("/assets/img/cross.png");
+    background-size: 65%;
+    width: 1em;
+    height: 1em;
+}
+
+.cart-orders__orders {
+    display: grid;
+    row-gap: 2.5em;
+    padding: 0 2.5em;
+    margin-top: 3em;
+}
+
+.cart-order {
+    display: flex;
+    padding-bottom: 2.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart-order__image {
+    width: 8em;
+    height: 11em;
+    object-fit: cover;
+}
+
+.cart-order__details {
+    flex: 1;
+    margin-left: 2em;
+}
+
+.cart-order__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.cart-order__price {
+    font-size: 1.25em;
+    margin-top: 0.5rem;
+}
+
+.cart-order__size {
+    font-size: 1.125em;
+    margin: 1rem 0 1.25rem;
+}
+
+.cart-order__size--0 {
+    color: var(--color-whiterGray);
+}
+
+span.cart-order__size--1 {
+    font-weight: 500;
+}
+
+.cart-order__details .selector {
+    margin: auto;
 }
 
 /* Footer */
