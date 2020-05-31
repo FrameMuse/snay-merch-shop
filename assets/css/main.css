@@ -652,6 +652,118 @@ hr {
     color: white;
 }
 
+/* Popup */
+
+.popup, .popup__cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    z-index: 26;
+}
+
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__cover {
+    background: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.popup-window {
+    position: absolute;
+    top: 0;
+    width: calc(75em + 15vw);
+    padding: 3em;
+    margin: 2em 0;
+    background: white;
+    box-shadow: 0 0 0.5em -0.25em;
+    opacity: 0;
+    transform: scale(0.5);
+    z-index: 26;
+}
+
+.popup-window__article {
+    display: grid;
+    text-align: center;
+}
+
+.popup-window__title {
+    display: flex;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.popup-window__summary {
+    margin-top: 1em;
+    line-height: 1.25;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.popup-window__close {
+    margin-left: auto;
+}
+
+.scale-out {
+    transform: scale(0.75);
+    opacity: 0;
+    transition: .175s transform, .125s opacity;
+    z-index: 25
+}
+
+.scale-in {
+    transform: scale(1);
+    opacity: 1;
+    transition: .175s transform, .125s opacity;
+    z-index: 26;
+}
+
+/* Shirt */
+
+.shirt-sizing {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2.5em;
+}
+
+.shirt-sizing__image {
+    width: 20em;
+}
+
+.shirt-sizing__container {
+    margin-left: 5em;
+}
+
+.shirt-sizing__paragraph {
+    white-space: pre-line;
+    margin: 0;
+}
+
+.shirt-sizing__table {
+    border-spacing: 3em 2em;
+    margin-top: 3em;
+}
+
+.shirt-sizing__table td {
+    text-align: center;
+}
+
+.shirt-sizing__table tr:first-child td {
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
 /* Footer */
 
 .bottombar {
