@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/roboto.css"> <!-- Font Roboto -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <div>
+                <a href="#help">Нужна помощь?</a>
+            </div>
+            <div class="topbar__logo">снейстор</div>
+            <div class="topbar__account">
+                <div class="topbar-account__section">
+                    <span class="icon__bag"></span>
+                    <span class="topbar-account__section--text">
+                        <span class="js-cart-value">0</span>
+                        рублей
+                    </span>
+                    <a href="#cart" class="ghost"></a>
+                </div>
+                <div class="topbar-account__section">
+                    <span class="icon__person"></span>
+                    <span class="topbar-account__section--text">Войти</span>
+                    <a href="#login" class="ghost"></a>
+                </div>
+            </div>
+        </div>
+        <div class="megabar">
+            <div class="megabar-search">
+                <span class="megabar-search__icon icon__loupe"></span>
+                <input class="megabar-search__input" placeholder="Найти товар">
+            </div>
+            <div class="megabar-menu">
+                <a href="#link" class="megabar-menu__link">Футболки</a>
+                <a href="#link" class="megabar-menu__link">Лонгсливы</a>
+                <a href="#link" class="megabar-menu__link">Худи</a>
+                <a href="#link" class="megabar-menu__link">Кепки и шапки</a>
+                <a href="#link" class="megabar-menu__link">Чехлы</a>
+                <a href="#link" class="megabar-menu__link">Стикеры</a>
+                <a href="#link" class="megabar-menu__link">Сумки</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="page-breadcrumbs">
+            Главная > Мой аккаунт
+        </div>
+        <div class="page-part">
+            <div class="page-part__container">
+                <div class="page-profile">
+                    <!-- Персональные данные -->
+                    <div class="page-profile__container" hidden>
+                        <div class="user-data">
+                            <div class="user-data__title">Личные данные</div>
+                            <div class="user-data__container">
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Имя</label>
+                                    <input type="text" class="input-group__field" value="Виктор">
+                                </div>
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Фамилия</label>
+                                    <input type="text" class="input-group__field" value="Хуеренко">
+                                </div>
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Отчество</label>
+                                    <input type="text" class="input-group__field" value="Виктор">
+                                </div>
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Телефон</label>
+                                    <input type="text" class="input-group__field" value="+7 (937) 566-56-13">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-data">
+                            <div class="user-data__title">Адресс доставки</div>
+                            <div class="user-data__container">
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Страна</label>
+                                    <input type="text" class="input-group__field" value="Россия">
+                                </div>
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Город</label>
+                                    <input type="text" class="input-group__field" value="Санкт-Петербург">
+                                </div>
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Край / Область / Регион*</label>
+                                    <input type="text" class="input-group__field" value="Ленинградская">
+                                </div>
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Улица, дом, квартира*</label>
+                                    <input type="text" class="input-group__field" value="ул. Ленина, д. 25, кв. 192">
+                                </div>
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Почтовый индекс*</label>
+                                    <input type="text" class="input-group__field" value="435316">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="user-data-submit">Сохранить информацию</button>
+                    </div>
+                    <!-- История заказов -->
+                    <div class="page-profile__container" hidden>
+                        <div class="page-profile__article">
+                            <div class="page-profile__title">История заказов</div>
+                            <!-- <div class="page-profile__summary">фыв</div> -->
+                        </div>
+                        <div class="orders-history">
+                            <div class="orders-history__order">
+                                <div class="orders-history-info">
+                                    <div class="orders-history-info__col">
+                                        <span class="orders-history-info__col--0">Возврат</span>
+                                        <span class="orders-history-info__col--1">Похоже, что вы отменили данный заказ</span>
+                                    </div>
+                                    <div class="orders-history-info__col">
+                                        <span class="orders-history-info__col--0">Заказ №</span>
+                                        <span class="orders-history-info__col--1">492378569</span>
+                                    </div>
+                                    <div class="orders-history-info__col">
+                                        <span class="orders-history-info__col--0">Дата отправки</span>
+                                        <span class="orders-history-info__col--1">11 янв., 2020</span>
+                                    </div>
+                                </div>
+                                <div class="orders-history-items">
+                                    <div class="orders-history-items__images">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <div class="orders-history-items__img-cover">
+                                            <span class="orders-history-items__img-cover__text">+2</span>
+                                        </div>
+                                        <!-- Cover когда елементов больше 4 -->
+                                    </div>
+                                    <div class="orders-history-items__buttons">
+                                        <button class="orders-history-items__button">Смотреть заказ</button>
+                                        <button class="orders-history-items__button">Отследить заказ</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orders-history__order">
+                                <div class="orders-history-info">
+                                    <div class="orders-history-info__col">
+                                        <span class="orders-history-info__col--0">Отправлено!</span>
+                                        <span class="orders-history-info__col--2">Предполагаемая дата доставки 21 янв., 2020</span>
+                                        <!-- orders-history-info__col--2; цифра 2 значит зелёный цвет -->
+                                    </div>
+                                    <div class="orders-history-info__col">
+                                        <span class="orders-history-info__col--0">Заказ №</span>
+                                        <span class="orders-history-info__col--1">492378569</span>
+                                    </div>
+                                    <div class="orders-history-info__col">
+                                        <span class="orders-history-info__col--0">Дата отправки</span>
+                                        <span class="orders-history-info__col--1">11 янв., 2020</span>
+                                    </div>
+                                </div>
+                                <div class="orders-history-items">
+                                    <div class="orders-history-items__images">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <div class="orders-history-items__img-cover">
+                                            <span class="orders-history-items__img-cover__text">+2</span>
+                                        </div>
+                                    </div>
+                                    <div class="orders-history-items__buttons">
+                                        <button class="orders-history-items__button">Смотреть заказ</button>
+                                        <button class="orders-history-items__button">Отследить заказ</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orders-history__order">
+                                <div class="orders-history-info">
+                                    <div class="orders-history-info__col">
+                                        <span class="orders-history-info__col--0">Отправлено!</span>
+                                        <span class="orders-history-info__col--2">Предполагаемая дата доставки 21 янв., 2020</span>
+                                        <!-- orders-history-info__col--2; цифра 2 значит зелёный цвет -->
+                                    </div>
+                                    <div class="orders-history-info__col">
+                                        <span class="orders-history-info__col--0">Заказ №</span>
+                                        <span class="orders-history-info__col--1">492378569</span>
+                                    </div>
+                                    <div class="orders-history-info__col">
+                                        <span class="orders-history-info__col--0">Дата отправки</span>
+                                        <span class="orders-history-info__col--1">11 янв., 2020</span>
+                                    </div>
+                                </div>
+                                <div class="orders-history-items">
+                                    <div class="orders-history-items__images">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <img src="/assets/img/temp.png" alt="image" class="orders-history-items__image">
+                                        <div class="orders-history-items__img-cover">
+                                            <span class="orders-history-items__img-cover__text">+2</span>
+                                        </div>
+                                    </div>
+                                    <div class="orders-history-items__buttons">
+                                        <button class="orders-history-items__button">Смотреть заказ</button>
+                                        <button class="orders-history-items__button">Отследить заказ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Страница заказА -->
+                    <div class="page-profile__container page-order">
+                        <div class="page-order__content">
+                            <div class="page-profile__article">
+                                <div class="page-profile__title">Отправлено</div>
+                                <div class="page-profile__summary">Мы отправили ваш заказ. Надеемся, что вы будете довльны!</div>
+                                <div class="page-profile__green-text">Предполагаемая дата доставки 21 янв., 2020</div>
+                            </div>
+                            <div class="page-order__info cols">
+                                <div class="cols-coll">
+                                    <b>Номер заказа:</b>
+                                    <span>492378569</span>
+                                </div>
+                                <div class="cols-coll">
+                                    <b>Дата заказа:</b>
+                                    <span>9 янв., 2020</span>
+                                </div>
+                                <div class="cols-coll">
+                                    <b>Дата отправки:</b>
+                                    <span>11 янв., 2020</span>
+                                </div>
+                            </div>
+                            <div class="page-order__buttons">
+                                <button class="page-order__button">Отследить заказ</button>
+                                <button class="page-order__button">Информация о возврате</button>
+                            </div>
+                        </div>
+                        <div class="page-order__content">
+                            <div class="page-profile__article">
+                                <div class="page-profile__title">5 товаров</div>
+                            </div>
+                            <div class="page-order__products">
+                                <div class="product">
+                                    <img src="/assets/img/temp.png" alt="product" class="product__background">
+                                    <div class="product__title">Чёрная футбдока Сней</div>
+                                    <div class="product__price">1 990 &#8381;</div>
+                                    <div class="product__size">M</div>
+                                    <div class="product__amount">X2</div>
+                                    <a href="/order.html" class="ghost"></a>
+                                </div>
+                                <div class="product">
+                                    <img src="/assets/img/temp.png" alt="product" class="product__background">
+                                    <div class="product__title">Чёрная футбдока Сней</div>
+                                    <div class="product__price">1 990 &#8381;</div>
+                                    <div class="product__size">M</div>
+                                    <a href="/order.html" class="ghost"></a>
+                                </div>
+                                <div class="product">
+                                    <img src="/assets/img/temp.png" alt="product" class="product__background">
+                                    <div class="product__title">Чёрная футбдока Сней</div>
+                                    <div class="product__price">1 990 &#8381;</div>
+                                    <div class="product__size">M</div>
+                                    <a href="/order.html" class="ghost"></a>
+                                </div>
+                                <div class="product">
+                                    <img src="/assets/img/temp.png" alt="product" class="product__background">
+                                    <div class="product__title">Чёрная футбдока Сней</div>
+                                    <div class="product__price">1 990 &#8381;</div>
+                                    <div class="product__size">M</div>
+                                    <a href="/order.html" class="ghost"></a>
+                                </div>
+                                <div class="product">
+                                    <img src="/assets/img/temp.png" alt="product" class="product__background">
+                                    <div class="product__title">Чёрная футбдока Сней</div>
+                                    <div class="product__price">1 990 &#8381;</div>
+                                    <div class="product__size">M</div>
+                                    <a href="/order.html" class="ghost"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-order__content">
+                            <div class="page-profile__article">
+                                <div class="page-profile__title">Информация о доставке</div>
+                            </div>
+                            <div class="page-order__info cols">
+                                <div class="cols-coll">
+                                    <b>Адрес доставки:</b>
+                                    <p>Виктор Токаренко
+                                        ул. Ленинская, д. 25, кв. 671
+                                        г. Санкт-Петербург, 561964
+                                        Ленинградская обл.
+                                        Россия
+                                        +9375912861</p>
+                                </div>
+                                <div class="cols-coll">
+                                    <b>Предпологаемая дата доставки:</b>
+                                    <span>21 янв., 2020</span>
+                                </div>
+                                <div class="cols-coll">
+                                    <b>Способ доставки:</b>
+                                    <span>Почта России</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-order__content">
+                            <div class="page-profile__article">
+                                <div class="page-profile__title">Информация об оплате</div>
+                            </div>
+                            <div class="page-order__info cols">
+                                <div class="cols-coll">
+                                    <b>Промежуточная сумма:</b>
+                                    <span>12 290 РУБ.</span>
+                                </div>
+                                <div class="cols-coll">
+                                    <b>Доставка:</b>
+                                    <span>Бесплатно</span>
+                                </div>
+                                <div class="cols-coll">
+                                    <b>Итог:</b>
+                                    <span>12 290 РУБ.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-profile__sidebar">
+                        <div class="page-profile-account">
+                            <img src="/assets/img/temp.png" alt="avatar" class="page-profile-account__avatar">
+                            <div class="page-profile-account__details">
+                                <span class="page-profile-account__username">Виктор Хуеренко</span>
+                                <div class="page-profile-account__links">
+                                    <a href="#link">Вконтакте</a>
+                                    <a href="#link">Выйти</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-profile-menu">
+                            <a href="#link" class="page-profile-menu__link page-profile-menu__link--active">Личные данные</a>
+                            <a href="#link" class="page-profile-menu__link">История заказов</a>
+                            <a href="#link" class="page-profile-menu__link">Нужна помощь?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bottombar">
+            <div class="bottombar-menu">
+                <a href="#link" class="bottombar-menu__link">Футболки</a>
+                <a href="#link" class="bottombar-menu__link">Лонгсливы</a>
+                <a href="#link" class="bottombar-menu__link">Худи</a>
+                <a href="#link" class="bottombar-menu__link">Кепки и шапки</a>
+                <a href="#link" class="bottombar-menu__link">Чехлы</a>
+                <a href="#link" class="bottombar-menu__link">Стикеры</a>
+                <a href="#link" class="bottombar-menu__link">Сумки</a>
+            </div>
+            <div class="bottombar__social">
+                <span class="bottombar__social--text">Подпичивойся - </span>
+                <a href="#link" class="bottombar__social--network icon__twitter"></a>
+                <a href="#link" class="bottombar__social--network icon__youtube"></a>
+                <a href="#link" class="bottombar__social--network icon__instagram"></a>
+            </div>
+        </div>
+        <div class="footer__logo">снейстор</div>
+        <div class="footer__copyright">
+            <span>&copy; 2020 - снейстор</span>
+            <a href="#link">Публичная оферта</a>
+            <a href="#link">Нужна помощь?</a>
+            <span>Сотрудничество - support@snaystore.ru</span>
+        </div>
+    </footer>
+</body>
+</html>
