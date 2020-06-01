@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/roboto.css"> <!-- Font Roboto -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <div>
+                <a href="#help">Нужна помощь?</a>
+            </div>
+            <div class="topbar__logo">снейстор</div>
+            <div class="topbar__account">
+                <div class="topbar-account__section">
+                    <span class="icon__bag"></span>
+                    <span class="topbar-account__section--text">
+                        <span class="js-cart-value">0</span>
+                        рублей
+                    </span>
+                    <a href="#cart" class="ghost"></a>
+                </div>
+                <div class="topbar-account__section">
+                    <span class="icon__person"></span>
+                    <span class="topbar-account__section--text">Войти</span>
+                    <a href="#login" class="ghost"></a>
+                </div>
+            </div>
+        </div>
+        <div class="megabar">
+            <div class="megabar-search">
+                <span class="megabar-search__icon icon__loupe"></span>
+                <input class="megabar-search__input" placeholder="Найти товар">
+            </div>
+            <div class="megabar-menu">
+                <a href="#link" class="megabar-menu__link">Футболки</a>
+                <a href="#link" class="megabar-menu__link">Лонгсливы</a>
+                <a href="#link" class="megabar-menu__link">Худи</a>
+                <a href="#link" class="megabar-menu__link">Кепки и шапки</a>
+                <a href="#link" class="megabar-menu__link">Чехлы</a>
+                <a href="#link" class="megabar-menu__link">Стикеры</a>
+                <a href="#link" class="megabar-menu__link">Сумки</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="page-breadcrumbs">
+            Главная > Мой аккаунт
+        </div>
+        <div class="page-part">
+            <div class="page-part__container">
+                <div class="page-ordering">
+                    <div class="page-ordering__delivery">
+                        <div class="page-ordering__title">Ваши данные для доставки</div>
+                        <div class="page-ordering__content">
+                            <div class="input-group">
+                                <label for="[name]" class="input-group__label">Имя*</label>
+                                <input type="text" class="input-group__field" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="[name]" class="input-group__label">Фамилия*</label>
+                                <input type="text" class="input-group__field" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="[name]" class="input-group__label">Отчество*</label>
+                                <input type="text" class="input-group__field" required>
+                            </div>
+                            <div class="input-row-groups">
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Телефон*</label>
+                                    <input type="text" class="input-group__field" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="[name]" class="input-group__label">Эл. почта*</label>
+                                    <input type="text" class="input-group__field" required>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="[name]" class="input-group__label">Страна*</label>
+                                <input type="text" class="input-group__field" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="[name]" class="input-group__label">Город*</label>
+                                <input type="text" class="input-group__field" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="[name]" class="input-group__label">Край / область / регион*</label>
+                                <input type="text" class="input-group__field" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="[name]" class="input-group__label">Улица, дом, квартира*</label>
+                                <input type="text" class="input-group__field" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="[name]" class="input-group__label">Почтовый индекс*</label>
+                                <input type="text" class="input-group__field" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-ordering__details">
+                        <div class="page-ordering__title">Детали заказа</div>
+                        <div class="cart-orders__orders">
+                            <div class="cart-order">
+                                <img src="assets/img/temp.png" alt="image" class="cart-order__image">
+                                <div class="cart-order__details">
+                                    <div class="cart-order__title">
+                                        <span>Чёрная футболка Сней</span>
+                                        <span class="icon__cross"></span>
+                                    </div>
+                                    <div class="cart-order__price">1 990 РУБ.</div>
+                                    <div class="cart-order__size">
+                                        <span class="cart-order__size--0">Размер</span>
+                                        <span class="cart-order__size--1">M</span>
+                                    </div>
+                                    <div class="selector">
+                                        <div class="selector__current" option="1"></div>
+                                        <div class="selector__group">
+                                            <div class="selector__option">Анал бомжа</div>
+                                            <div class="selector__option"></div>
+                                            <div class="selector__option">123X</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-order">
+                                <img src="assets/img/temp.png" alt="image" class="cart-order__image">
+                                <div class="cart-order__details">
+                                    <div class="cart-order__title">
+                                        <span>Чёрная футболка Сней</span>
+                                        <span class="icon__cross"></span>
+                                    </div>
+                                    <div class="cart-order__price">1 990 РУБ.</div>
+                                    <div class="cart-order__size">
+                                        <span class="cart-order__size--0">Размер</span>
+                                        <span class="cart-order__size--1">M</span>
+                                    </div>
+                                    <div class="selector">
+                                        <div class="selector__current" option="1"></div>
+                                        <div class="selector__group">
+                                            <div class="selector__option">Анал бомжа</div>
+                                            <div class="selector__option"></div>
+                                            <div class="selector__option">123X</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-submit">
+                            <div class="cart-submit__promocode">
+                                <input type="text" class="cart-submit__promocode--input" placeholder="Ваш промокод">
+                                <button class="cart-submit__promocode--button">Добавить</button>
+                            </div>
+                            <div class="cols">
+                                <div class="cols-coll">
+                                    <b>Стоимость заказа</b>
+                                    <span>3 990 РУБ.</span>
+                                </div>
+                                <div class="cols-coll">
+                                    <b>Стоимость доставки</b>
+                                    <span>350 РУБ.</span>
+                                </div>
+                                <div class="cols-coll cols-coll--emphasized">
+                                    <b>Итого к оплате</b>
+                                    <b>5 450 РУБ.</b>
+                                </div>
+                            </div>
+                            <button class="cart-submit__button">Продолжить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bottombar">
+            <div class="bottombar-menu">
+                <a href="#link" class="bottombar-menu__link">Футболки</a>
+                <a href="#link" class="bottombar-menu__link">Лонгсливы</a>
+                <a href="#link" class="bottombar-menu__link">Худи</a>
+                <a href="#link" class="bottombar-menu__link">Кепки и шапки</a>
+                <a href="#link" class="bottombar-menu__link">Чехлы</a>
+                <a href="#link" class="bottombar-menu__link">Стикеры</a>
+                <a href="#link" class="bottombar-menu__link">Сумки</a>
+            </div>
+            <div class="bottombar__social">
+                <span class="bottombar__social--text">Подпичивойся - </span>
+                <a href="#link" class="bottombar__social--network icon__twitter"></a>
+                <a href="#link" class="bottombar__social--network icon__youtube"></a>
+                <a href="#link" class="bottombar__social--network icon__instagram"></a>
+            </div>
+        </div>
+        <div class="footer__logo">снейстор</div>
+        <div class="footer__copyright">
+            <span>&copy; 2020 - снейстор</span>
+            <a href="#link">Публичная оферта</a>
+            <a href="#link">Нужна помощь?</a>
+            <span>Сотрудничество - support@snaystore.ru</span>
+        </div>
+    </footer>
+</body>
+</html>
